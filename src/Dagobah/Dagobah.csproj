@@ -47,6 +47,8 @@
   <ItemGroup>
     <Compile Include="BooleanClass.cs" />
     <Compile Include="CollectionClass.cs" />
+    <Compile Include="Darktrooper.cs" />
+    <Compile Include="Jedi.cs" />
     <Compile Include="NullClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Stormtrooper.cs" />

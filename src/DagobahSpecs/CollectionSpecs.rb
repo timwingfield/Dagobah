@@ -1,6 +1,4 @@
-require File.dirname(__FILE__) + '../Dagobah/bin/Debug/Dagobah.dll'
-require 'rubygems'
-require 'spec'
+require 'spec_helper'
 
 describe "When testing the collection class" do
   before :each do

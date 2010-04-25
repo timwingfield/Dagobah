@@ -1,6 +1,4 @@
-require File.dirname(__FILE__) + '../Dagobah/bin/Debug/Dagobah.dll'
-require 'rubygems'
-require 'spec'
+require 'spec_helper'
 
 describe "When testing a method that returns null" do
   before :each do
