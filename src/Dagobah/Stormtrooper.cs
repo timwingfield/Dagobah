@@ -6,6 +6,7 @@ namespace Dagobah
     {
         int Accuracy { get; set; }
     }
+
     public class Stormtrooper : IStormtrooper
     {
         public int Accuracy { get; set; }

@@ -51,6 +51,7 @@
     <Compile Include="Jedi.cs" />
     <Compile Include="NullClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Squad.cs" />
     <Compile Include="Stormtrooper.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

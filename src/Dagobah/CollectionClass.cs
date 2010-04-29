@@ -9,7 +9,7 @@ namespace Dagobah
 
         public CollectionClass()
         {
-            Collection = new List<string>(){ "One Item" };
+            Collection = new List<string> { "One Item" };
             EmptyCollection = new List<string>();
         }
     }

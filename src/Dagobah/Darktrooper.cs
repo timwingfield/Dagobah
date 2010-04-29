@@ -1,6 +1,6 @@
 namespace Dagobah
 {
-    public class Darktrooper : Stormtrooper 
+    public class Darktrooper : Stormtrooper
     {
         
     }
