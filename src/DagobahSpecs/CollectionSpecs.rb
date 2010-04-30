@@ -53,5 +53,28 @@ describe "When adding stormtroopers to a squad" do
       @squad.should have(1).Troopers
     end
     
+    it "should have two troopers in the list" do
+      @squad.AddAStormtrooper
+      @squad.AddAStormtrooper
+      @squad.Troopers.should have(2).items
+    end
+  end
+  
+  describe "When adding three stormtroopers" do
+    before :each do
+      @squad.AddThreeStormtroopers
+    end
+    
+    it "should have at least two troopers" do
+      @squad.Troopers.should have_at_least(2).items
+    end
+    
+    it "should have at most four troopers" do
+      @squad.Troopers.should have_at_most(4).items
+    end
+    
+    it "should have exactly three troopers" do
+      @squad.Troopers.should have_exactly(3).items
+    end
   end
 end

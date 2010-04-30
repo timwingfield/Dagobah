@@ -16,6 +16,13 @@ namespace Dagobah
             Troopers.Add(new Stormtrooper());
         }
 
+        public void AddThreeStormtroopers()
+        {
+            Troopers.Add(new Stormtrooper());
+            Troopers.Add(new Stormtrooper());
+            Troopers.Add(new Stormtrooper());
+        }
+
         /*
          * write tests to check ctor intialization
          * in ruby: init Stormtrooper with :accuracy and :name or some new property
