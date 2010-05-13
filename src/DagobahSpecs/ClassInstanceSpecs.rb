@@ -62,3 +62,17 @@ describe "When checking if a class implements an interface" do
     @darktrooper.should be_an(IStormtrooper)
   end
 end
+
+describe "When creating a new stormtrooper" do
+  before :each do
+    @trooper = Stormtrooper.new("TK421")
+  end
+  
+  it "should have the designation set" do
+    @trooper.Designation.should == "TK421"
+  end
+  
+  it "should have an accuracy of four" do
+    @trooper.Accuracy.should == 4
+  end
+end

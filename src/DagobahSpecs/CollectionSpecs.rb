@@ -78,3 +78,35 @@ describe "When adding stormtroopers to a squad" do
     end
   end
 end
+
+describe "When creating a squad" do
+  before :each do
+    @trooper1 = Stormtrooper.new "TK421"
+    @trooper2 = Stormtrooper.new "BKW407"
+    @trooper3 = Stormtrooper.new "APW1227"
+    
+    @squad = Squad.new
+    @squad.Troopers << @trooper1
+    @squad.Troopers << @trooper2
+  end
+  
+  it "should have two troopers in the squad" do
+    @squad.Troopers.should have(2).items
+  end
+  
+  it "should have trooper one in the squad" do
+    @squad.Troopers.should include(@trooper1)
+  end
+  
+  it "should have trooper two in the squad" do
+    @squad.Troopers.should include(@trooper2)
+  end
+  
+  it "should have troopers one and two in the squad" do
+    @squad.Troopers.should include(@trooper1, @trooper2)
+  end
+  
+  it "should not have trooper three in the squad" do
+    @squad.Troopers.should_not include(@trooper3)
+  end
+end
