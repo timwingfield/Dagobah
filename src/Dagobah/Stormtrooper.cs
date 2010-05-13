@@ -6,6 +6,7 @@ namespace Dagobah
     {
         int Accuracy { get; set; }
         string Designation { get; set; }
+        void InspectDroids();
     }
 
     public class Stormtrooper : IStormtrooper
@@ -23,5 +24,16 @@ namespace Dagobah
             Designation = designation;
             Accuracy = 4;
         }
+
+        public void InspectDroids()
+        {
+            throw new NotTheDroidsYourLookingFor("You can go about your business.");
+        }
+    }
+
+    public class NotTheDroidsYourLookingFor : Exception
+    {
+        public NotTheDroidsYourLookingFor() { }
+        public NotTheDroidsYourLookingFor(string message) : base(message) { }
     }
 }
